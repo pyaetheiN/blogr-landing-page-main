@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-blogr-landing-page-using-flexbox-grid-and-javascript-SJrdbwJE5
 - Live Site URL: https://pyaethein.github.io/blogr-landing-page-main/
 
 ## My process
