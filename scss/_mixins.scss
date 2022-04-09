@@ -1,0 +1,54 @@
+// ===== wrapper ===== \\
+
+@mixin wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+// xxl screens (desktops)
+$screen-xxl-min: 1280px;
+
+// xl screens (laptops)
+$screen-xl-max: 1280px;
+
+// screens between tablets and laptops
+$screen-lg-max: 968px;
+
+// tablets
+$screen-md-max: 768px;
+
+// mobile
+$screen-sm-max: 468px;
+
+
+// ===== media queries ===== \\
+
+@mixin xxl {
+  @media screen and (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
