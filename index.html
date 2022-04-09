@@ -6,15 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Blogr]</title>
+  <title>Ricky | Blogr</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/efb72f7d5e.js" crossorigin="anonymous"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -25,44 +20,50 @@
         <header class="header">
           <nav class="nav" id="nav-bar">
             <img src="images/logo.svg" alt="logo" class="nav__logo">
-            <img src="images/icon-hamburger.svg" alt="menu" class="nav__menu" id="nav-menu">
-            <img src="images/icon-close.svg" alt="" class="nav__close" id="nav-close">
+            <!-- ===== nav-menu ===== -->
+            <i class="fa-solid fa-bars nav__menu" id="nav-menu"></i>
             <!-- ===== nav-list ===== -->
             <div class="nav__list" id="nav-list">
               <!-- ===== nav-left ===== -->
               <ul class="nav__list-left">
                 <li class="nav__item dropdown">
-                  <a href="#" class="nav__link dropdown__link"><span>Product</span><i class="fa-solid fa-angle-down nav__icon"></i></a>
+                  <a href="#" class="nav__link"><span>Product</span><i class="fa-solid fa-angle-down nav__icon"></i></a>
 
-                  <!-- ===== dropdown-menu ===== -->
-                  <ul class="dropdown__menu">
-                    <li class="dropdown__item"><a href="#" class="nav__link">Overview</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Pricing</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Marketplace</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Features</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Integration</a></li>
-                  </ul>
+                  <div class="dropdown__container">
+                    <!-- ===== dropdown-menu ===== -->
+                    <ul class="dropdown__menu">
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Overview</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Pricing</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Marketplace</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Features</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Integration</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="nav__item dropdown">
-                  <a href="#" class="nav__link dropdown__link"><span>Company</span><i class="fa-solid fa-angle-down nav__icon"></i></a>
+                  <a href="#" class="nav__link"><span>Company</span><i class="fa-solid fa-angle-down nav__icon"></i></a>
 
-                  <!-- ===== dropdown-menu ===== -->
-                  <ul class="dropdown__menu">
-                    <li class="dropdown__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Team</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Blog</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Careers</a></li>
-                  </ul>
+                  <div class="dropdown__container">
+                    <!-- ===== dropdown-menu ===== -->
+                    <ul class="dropdown__menu">
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">About</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Team</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Blog</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Careers</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="nav__item dropdown">
-                  <a href="#" class="nav__link dropdown__link"><span>Connect</span><i class="fa-solid fa-angle-down nav__icon"></i></a>
+                  <a href="#" class="nav__link"><span>Connect</span><i class="fa-solid fa-angle-down nav__icon"></i></a>
 
-                  <!-- ===== dropdown-menu ===== -->
-                  <ul class="dropdown__menu">
-                    <li class="dropdown__item"><a href="#" class="nav__link">Contact</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Newsletter</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">LinkedIn</a></li>
-                  </ul>
+                  <div class="dropdown__container">
+                    <!-- ===== dropdown-menu ===== -->
+                    <ul class="dropdown__menu">
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Contact</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">Newsletter</a></li>
+                      <li class="dropdown__item"><a href="#" class="dropdown__link">LinkedIn</a></li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
               <!-- ===== nav-right ===== -->
@@ -173,7 +174,7 @@
       <div class="footer__content">
         <img src="images/logo.svg" alt="" class="logo">
         <ul class="footer__list">
-          <h4 class="footer__subhead">Product</h4>
+          <a href="#" class="footer__subhead">Product</a>
           <li class="footer__item">
             <a href="#" class="footer__link">Overview</a>
           </li>
@@ -191,7 +192,7 @@
           </li>
         </ul>
         <ul class="footer__list">
-          <h4 class="footer__subhead">Company</h4>
+          <a href="#" class="footer__subhead">Company</a>
           <li class="footer__item">
             <a href="#" class="footer__link">About</a>
           </li>
@@ -206,7 +207,7 @@
           </li>
         </ul>
         <ul class="footer__list">
-          <h4 class="footer__subhead">Connect</h4>
+          <a href="#" class="footer__subhead">Connect</a>
           <li class="footer__item">
             <a href="#" class="footer__link">Contact</a>
           </li>

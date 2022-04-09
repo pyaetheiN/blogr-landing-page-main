@@ -11,6 +11,8 @@ $screen-xxl-min: 1280px;
 // xl screens (laptops)
 $screen-xl-max: 1280px;
 
+$screen-xl-min: 968px;
+
 // screens between tablets and laptops
 $screen-lg-max: 968px;
 
@@ -29,7 +31,14 @@ $screen-sm-max: 468px;
   }
 }
 
-@mixin xl {
+@mixin xl-min {
+  @media screen and (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+
+@mixin xl-max {
   @media screen and (max-width: #{$screen-xl-max}) {
     @content;
   }
