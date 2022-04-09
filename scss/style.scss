@@ -107,6 +107,10 @@ img{
       &-right{
         margin-left: auto;
 
+        .btn{
+          padding: 0.7em 2em 0.5em;
+        }
+
         @include lg {
           margin: 0.2rem auto 0;
           border-top: 1px solid rgba(0,0,0,0.1);

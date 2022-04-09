@@ -188,6 +188,10 @@ img {
   margin-left: auto;
 }
 
+.hero .nav__list-right .btn {
+  padding: 0.7em 2em 0.5em;
+}
+
 @media screen and (max-width: 968px) {
   .hero .nav__list-right {
     margin: 0.2rem auto 0;
