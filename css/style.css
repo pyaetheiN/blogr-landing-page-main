@@ -75,6 +75,7 @@ img {
 .overlay {
   background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
   background: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 6.25rem;
 }
 
 .hero {
