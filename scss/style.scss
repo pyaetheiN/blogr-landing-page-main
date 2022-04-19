@@ -130,7 +130,7 @@ img{
         padding: 0.7em 0;
       }
       @include xl-min {
-        padding: 1.3em 0;
+        padding: 1.5em 0; // *
       }
     }
     &__icon{
@@ -190,7 +190,7 @@ img{
       border-radius: 5px;
 
       @include xl-min {
-        position: absolute;
+        position: absolute; // *
         top: rem(45);
         margin-left: -45px;
         background-color: $white;

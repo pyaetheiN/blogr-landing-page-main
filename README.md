@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](solution design/)
+![](screenshots/desktop-design.png)
 
 ### Links
 
@@ -59,6 +59,7 @@ Users should be able to:
 </div>
 ```
 ```css
+/* background image & background gradient */
 .overlay{
   background: linear-gradient(to right, #ff8f70, #ff3d54);
 }
@@ -67,6 +68,10 @@ Users should be able to:
   background-repeat: no-repeat;
   background-position: -25vw -82vw; /* x, y */
   background-size: 200%;
+}
+/* making dropdown menu accessible on hover */
+.nav__item{
+  padding: 1.5em 0; 
 }
 ```
 ```js
