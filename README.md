@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop design.png)
+![](solution design/)
 
 ### Links
 
@@ -47,8 +47,28 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to make dropdown menu using css tricks (css overriding orders) and menu toggle just by using a few lines of JavaScript.
+- Having a `background-image` (svg) and `background-color` (linear-gradient) using two containers.
+- Making dropdown menu using css `:hover` and menu toggle just by using icon library class names in JavaScript.
 
+```html
+<!-- ===== background gradient ===== -->
+<div class="overlay">
+  <!-- ===== hero ===== -->
+  <section class="hero" id="hero">
+  </section>
+</div>
+```
+```css
+.overlay{
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+}
+.hero{
+  background-image: url("../images/bg-pattern-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -25vw -82vw; /* x, y */
+  background-size: 200%;
+}
+```
 ```js
 const navMenu = document.getElementById('nav-menu');
 const navList = document.getElementById('nav-list');

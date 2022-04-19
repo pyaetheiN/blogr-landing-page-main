@@ -30,10 +30,10 @@ img{
 
 
 // ===== hero ===== \\
-
+.overlay{
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+}
 .hero{
-//   background: linear-gradient(to right, #ff8f70, #ff3d54);
-  background-color: $light-red;
   background-image: url("../images/bg-pattern-intro-desktop.svg");
   background-repeat: no-repeat;
   background-position: -25vw -82vw; // x,y
@@ -126,7 +126,12 @@ img{
     &__item{
       display: flex;
       // the main dropdown hover trick
-      padding: 1.1em 0;
+      @include lg {
+        padding: 0.7em 0;
+      }
+      @include xl-min {
+        padding: 1.3em 0;
+      }
     }
     &__icon{
       color: $white;
@@ -186,7 +191,7 @@ img{
 
       @include xl-min {
         position: absolute;
-        top: rem(40);
+        top: rem(45);
         margin-left: -45px;
         background-color: $white;
         border-radius: 5px;

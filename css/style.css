@@ -72,8 +72,12 @@ img {
   max-width: 100%;
 }
 
+.overlay {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+}
+
 .hero {
-  background-color: #ff3d54;
   background-image: url("../images/bg-pattern-intro-desktop.svg");
   background-repeat: no-repeat;
   background-position: -25vw -82vw;
@@ -208,7 +212,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.1em 0;
+}
+
+@media screen and (max-width: 968px) {
+  .hero .nav__item {
+    padding: 0.7em 0;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .hero .nav__item {
+    padding: 1.3em 0;
+  }
 }
 
 .hero .nav__icon {
@@ -295,7 +310,7 @@ img {
 @media screen and (min-width: 968px) {
   .hero .dropdown__menu {
     position: absolute;
-    top: 2.5rem;
+    top: 2.8125rem;
     margin-left: -45px;
     background-color: white;
     border-radius: 5px;
